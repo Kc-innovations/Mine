@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech Solutions Co.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tech Solutions Co.</h1>
+        <p>Your Partner in Digital Transformation</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="hero">
+        <h2>Innovative Solutions for the Future</h2>
+        <p>Transform your business with our cutting-edge digital solutions.</p>
+    </section>
+    
+    
+    
+        <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Tech Solutions Co. is a leading provider of innovative technology services. We offer software development, mobile applications, blockchain technology, fintech solutions, and more. Our mission is to help businesses stay ahead in the digital age by providing reliable and cutting-edge solutions tailored to their unique needs.</p>
+    </section>
+    
+    
+    
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Software Development</h3>
+            <p>Custom software solutions tailored to your needs, from enterprise systems to mobile apps.</p>
+            
+        <div class="dropdown-container">
+           <button class="see-more-btn" onclick="toggleDropdown(this)">See More</button>
+
+           <div class="dropdown-content">
+            <p>Website development and management</p>
+            <p>Mobile application design and deployment</p>
+            <p>Blockchain systems development</p>
+            <p>Fin-tech solutions</p>
+           </div>
+        </div>
+        </div>
+        
+        
+        
+        <div class="service-item">
+            <h3>Blockchain & Fintech</h3>
+            <p>Revolutionizing your business with secure blockchain systems and innovative fintech solutions.</p>
+        </div>
+        
+        
+        
+        <div class="service-item">
+            <h3>Data Analytics</h3>
+            <p>Transform raw data into actionable insights to make better business decisions.</p>
+        
+           <div class="dropdown-container">
+              <button class="see-more-btn" onclick="toggleDropdown(this)">See More</button>
+
+              <div class="dropdown-content">
+            <p>Business intelligence solutions</p>
+            <p>Data visualization and reporting</p>
+            <p>Predictive analytics for decision-making</p>
+            <p>Big data management and analysis</p>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="service-item">
+            <h3>Graphics & Motion Design</h3>
+            <p>Bring your brand to life with stunning graphics, animations, and motion design.</p>
+        </div>
+        
+        
+        
+        <div class="service-item">
+            <h3>Consultancy</h3>
+            <p>Expert advice to help you navigate and succeed in the ever-evolving tech landscape.</p>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you are ready to transform your business, we are here to help. Reach out today to discuss how we can assist you with our digital solutions.</p>
+        <a href="mailto:info@techsolutions.com"><button>Contact Us</button></a>
+    </section>
+
+    <section class="cta">
+        <h2>Let's Build the Future Together</h2>
+        <p>Start your digital transformation journey with Tech Solutions Co. today.</p>
+        <a href="#contact"><button>Get Started</button></a>
+    </section>
+    
+    
+    
+    
+    
+    <!-- Main content of the page -->
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Contact Info -->
+        <div class="footer-section">
+            <h3>Contact Information</h3>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:+2348069634547">+234-806-963-4547</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:support@tech.com">support@tech.com</a></p>
+        </div>
+
+        <!-- Office Location -->
+        <div class="footer-section">
+            <h3>Office Location</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Main St, Suite 456, City, Country</p>
+        </div>
+
+        <!-- Social Media Handles -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </footer>
+    
+    
+    
+    
+    <footer>
+        <p>&copy; 2025 Tech Solutions Co. | All Rights Reserved</p>
+    </footer>
+    
+    
+    
+    
+    
+        <script>
+        // Function to toggle the visibility of the dropdown
+        function toggleDropdown(button) {
+            // Close all dropdowns first
+            var allDropdowns = document.querySelectorAll('.dropdown-content');
+            allDropdowns.forEach(function(dropdown) {
+                dropdown.style.display = 'none';
+            });
+
+            // Get the dropdown content associated with the clicked button
+            var dropdown = button.nextElementSibling;
+
+            // If the dropdown content is not open, open it
+            if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
